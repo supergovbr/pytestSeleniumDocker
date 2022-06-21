@@ -7,7 +7,7 @@ py==1.10.0
 pyparsing==2.4.6
 pytest>=6.2.0
 pytest-xdist>=2.5.0
-selenium==3.141.0
+selenium>=4
 six==1.13.0
 urllib3==1.26.5
 wcwidth==0.1.8
