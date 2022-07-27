@@ -6,8 +6,6 @@ name: Docker
 # documentation.
 
 on:
-  schedule:
-    - cron: '35 20 * * *'
   push:
     branches: [ "master" ]
     # Publish semver tags as releases.
@@ -57,7 +55,7 @@ jobs:
         uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
         with:
           registry: ${{ env.REGISTRY }}
-          username: caduvieira
+          username: ${{ secrets.DOCKER_HUB_USER }}
           password: ${{ secrets.TOKEN_DOCKER_HUB }}
 
       # Extract metadata (tags, labels) for Docker
