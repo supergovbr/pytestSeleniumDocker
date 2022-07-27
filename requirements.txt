@@ -7,8 +7,10 @@ py==1.10.0
 pyparsing==2.4.6
 pytest>=6.2.0
 pytest-xdist>=2.5.0
+requests==2.28.1
 selenium>=4
 six==1.13.0
+untangle==1.2.1
 urllib3==1.26.5
 wcwidth==0.1.8
 zipp==0.6.0
